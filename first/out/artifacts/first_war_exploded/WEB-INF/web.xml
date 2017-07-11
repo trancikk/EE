@@ -9,6 +9,11 @@
         
     </servlet>
     <servlet>
+        <servlet-name>search</servlet-name>
+        <servlet-class>cool.searchSelector</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>ConfirmationServlet</servlet-name>
         <servlet-class>cool.ConfirmationServlet</servlet-class>
     </servlet>
@@ -22,6 +27,10 @@
         
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>search</servlet-name>
+        <url-pattern>/searchSelector</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>start</servlet-name>
         <url-pattern>/formhandlerservletExt</url-pattern>
     </servlet-mapping>
@@ -30,6 +39,6 @@
         <url-pattern>/ConfirmationServlet</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
-        <welcome-file>hello.html</welcome-file>
+        <welcome-file>searchEngineSelector.html</welcome-file>
     </welcome-file-list>
 </web-app>
