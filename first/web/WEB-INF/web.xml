@@ -18,6 +18,14 @@
         <servlet-class>cool.ConfirmationServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>objJsp</servlet-name>
+        <jsp-file>obj.jsp</jsp-file>
+        <init-param>
+            <param-name>webxmlparam</param-name>
+            <param-value>webb</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
         <servlet-name>start</servlet-name>
         <servlet-class>cool.formHandlerExt</servlet-class>
     </servlet>
@@ -25,6 +33,10 @@
         <servlet-name>suck</servlet-name>
         <url-pattern>/start</url-pattern>
         
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>objJsp</servlet-name>
+        <url-pattern>/obj.jsp</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>search</servlet-name>
